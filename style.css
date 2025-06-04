@@ -1,3 +1,4 @@
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +6,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    color: #263138;
+}
+
 /* Cabeçalho */
 header {
+    width: 100%;
     background-color: #FF9A6C;
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 60px 24px 60px;
 }
 
 header a {
@@ -23,10 +26,6 @@ header a {
     font-weight: 600;
     padding: 32px;
     text-decoration: none;
-}
-
-body {
-    color: #263138;
 }
 
 /* Seção Inicial*/
@@ -188,4 +187,37 @@ footer p a {
 
 .copyright a {
     color: #FF9A6C;
+}
+
+/* Celular */
+@media (max-width:340px),(max-width:764px) {
+
+}
+
+/* Tablet */
+@media (max-width:768px),(max-width:1024px) {
+
+    nav a {
+        padding: 18px;
+    }
+
+    #inicio {
+        flex-direction: column;
+    }
+
+    .absolute {
+        display: none;
+    }
+
+    #clinica {
+        flex-direction: column;
+    }
+
+    #duvidas {
+        flex-direction: column;
+    }
+
+    .pergunta {
+        text-align: center;
+    }
 }
